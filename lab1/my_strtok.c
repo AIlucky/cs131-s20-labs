@@ -6,7 +6,7 @@
  * TODO
  * In this function you should:
  * 1) use strspn to find the beginning of the token
- * - hint: think about the case where every character in the string is a token
+ * - hint: think about the case where every character in the string is a delim char
  * 2) use strcspn to find the end of the token
  * 3) set the end of the token to '\0' -- think about why?
  * 4) set saved_str to point to after the token
@@ -18,7 +18,7 @@
  * same string, str should be NULL.
  *
  * Example:
- * 	char *str = ",,a,b,,,cd,,";
+ * 	char str[20] = ",,a,b,,,cd,,";
  * 	char *t1 = strtok(str, ",");  // t1 should point to the token "a"
  * 	char *t2 = strtok(NULL, ","); // t2 should point to the token "b"
  * 	char *t3 = strtok(NULL, ","); // t3 should point to the token starting
