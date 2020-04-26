@@ -69,6 +69,7 @@ void TodoClient::PrintTodos() {
   if (resp_code.ok()) {
     int num_items = response.items_size();
 
+    fprintf(stdout, "Printing Todo Items\n");
     // TODO:
     // Print out all items in the Todo list!
     //
@@ -76,7 +77,7 @@ void TodoClient::PrintTodos() {
     // https://developers.google.com/protocol-buffers/docs/reference/cpp-generated#repeatednumeric
     //
     // Each item printed should have the format
-    // "Item <i>: <title> -- <status>",
+    // "Item <i>: <title> with status <status>",
     // where i is the index in the list,
     // title is the item's title, and
     // status is the item's status.
